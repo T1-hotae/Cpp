@@ -7,7 +7,7 @@ using namespace std;
 Dept::Dept(const Dept& dept) {
 	this->size = dept.size;
 	scores = new int[size];
-	for (int i = 0; i < size; i++) {	//배열 복사
+	for (int i = 0; i < size; i++) {
 		scores[i] = dept.scores[i];
 	}
 }
