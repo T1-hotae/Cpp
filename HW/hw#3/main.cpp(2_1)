@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+#include "Dept.h"
+
+int countPass(const Dept& dept) {
+    int count = 0;
+    for (int i = 0; i < dept.getSize(); i++) {
+        if (dept.isOver60(i)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    Dept com(10);
+    cout << "10개 점수 입력>> ";
+    com.read();
+
+    int n = countPass(com);
+    cout << "60점 이상은 " << n << "명";
+    return 0;
+}
