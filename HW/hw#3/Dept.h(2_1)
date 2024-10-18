@@ -1,0 +1,13 @@
+#pragma once
+class Dept {
+private:
+	int size;
+	int* scores;
+
+public:
+	Dept(int size);
+	~Dept();
+	int getSize() const;
+	void read();
+	bool isOver60(int index) const;
+};
