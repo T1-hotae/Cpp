@@ -16,7 +16,7 @@ public:
 
 class Rect : public Shape {
 public:
-    void get() {  // Rect에 대한 get() 구현
+    void get() { 
         cout << "Rectangle";
     }
 };
